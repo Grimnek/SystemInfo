@@ -11,7 +11,7 @@ height = 400
 version_os = None
 
 root = tkinter.Tk()
-root.title("Система")
+root.title("System")
 root.geometry(f"{width}x{height}+700+250")
 root.minsize(width, height)
 root.maxsize(width, height)

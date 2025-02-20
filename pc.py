@@ -1,16 +1,16 @@
 import platform, sys, cpuinfo
 
-pc_info = f"""Про комп'ютер:\n
-Мережеве ім'я ПК:              {platform.node()}
-Процесор:                       {cpuinfo.get_cpu_info()['brand_raw']}
-Ім'я:                                    {platform.system()}
-Випуск:                              {platform.release()}
-Версія:                               {platform.version()}
-Архітектура бітів:          {platform.architecture()[0]}"""
+pc_info = f"""О компьютере:\n
+Network Name:                  {platform.node()}
+Processor:                            {cpuinfo.get_cpu_info()['brand_raw']}
+System Name:                    {platform.system()}
+Release:                               {platform.release()}
+Version:                               {platform.version()}
+Architecture (bits):            {platform.architecture()[0]}"""
 
 
 python_info = f"""О Python:\n
-Дата складання:                               {platform.python_build()[1]}
-Імплементація Python:          {platform.python_implementation()}
-Версія Python:                           {platform.python_version()}
-Шлях до Python:                            {sys.executable}"""
+Build Date:                                    {platform.python_build()[1]}
+Python Implementation:            {platform.python_implementation()}
+Python Version:                           {platform.python_version()}
+Python Path:                                {sys.executable}"""
